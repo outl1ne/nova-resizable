@@ -1,13 +1,26 @@
 {
     "name": "optimistdigital/nova-resizable",
-    "description": "A Laravel Nova tool.",
+    "description": "Simple Laravel Nova tool to enable column resizing",
     "keywords": [
+        "optimistdigital",
         "laravel",
-        "nova"
+        "nova",
+        "resizing",
+        "columns",
+        "table"
     ],
+    "homepage": "https://github.com/optimistdigital/nova-resizable",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaspar Rosin",
+            "email": "kaspar@optimistdigital.com",
+            "homepage": "https://optimistdigital.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.2.0"
     },
     "autoload": {
         "psr-4": {
