@@ -97,9 +97,12 @@ export default {
         }.bind(this)
       );
 
-      document.addEventListener('mouseup', function (e) {
-        this.isResizing = false;
-      }.bind(this));
+      document.addEventListener(
+        'mouseup',
+        function (e) {
+          this.isResizing = false;
+        }.bind(this)
+      );
     },
   },
 };
