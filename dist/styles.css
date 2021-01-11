@@ -1,0 +1,1 @@
+.resizable-resource-table th:after{content:"";position:absolute;top:0;right:0;height:100%;width:1px;z-index:5;background-color:var(--70)}
