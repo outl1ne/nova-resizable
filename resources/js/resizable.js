@@ -1,5 +1,6 @@
-Nova.booting((Vue, router, store) => {
-    // TODO: copy current resource table to a new component and override nova-resource-table
+import ResourceTable from './components/ResourceTable.vue';
 
-    console.log(Vue.component);
-})
+Nova.booting(Vue => {
+  Vue.component('nova-resource-table', Vue.options.components['resource-table']);
+  Vue.component('resource-table', ResourceTable);
+});
