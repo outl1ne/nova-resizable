@@ -5,7 +5,7 @@
     "watch": "mix watch",
     "hot": "mix watch --hot",
     "prod": "mix --production",
-    "format": "prettier --write 'resources/**/*.{css,js,vue}'"
+    "format": "prettier --write 'resources/**/*.{css,scss,js,vue}'"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

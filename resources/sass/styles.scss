@@ -2,14 +2,25 @@ table.resizable-resource-table {
   table-layout: fixed;
 
   tr {
-    th, td {
+    div {
+      display: flex;
+
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    th,
+    td {
       min-width: 30px;
     }
   }
 
   th {
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
