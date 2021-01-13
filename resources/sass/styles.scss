@@ -1,4 +1,12 @@
-.resizable-resource-table {
+table.resizable-resource-table {
+  table-layout: fixed;
+
+  tr {
+    th, td {
+      min-width: 30px;
+    }
+  }
+
   th {
     &:after {
       content: "";
