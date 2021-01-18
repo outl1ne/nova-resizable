@@ -4,17 +4,19 @@ table.resizable-resource-table {
   tr {
     div {
       display: flex;
-
-      span {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
+      overflow: hidden;
     }
 
     th,
     td {
-      min-width: 30px;
+      min-width: 60px;
+    }
+
+    span,
+    a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
