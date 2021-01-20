@@ -20,13 +20,15 @@ export default {
   methods: {
     initializeResizableTable() {
       this.table = document.querySelector('table.resizable-resource-table');
-      this.row = this.table.getElementsByTagName('tr')[0];
+      if (!this.table) return;
 
+      this.row = this.table.getElementsByTagName('tr')[0];
       this.columns = (this.row && this.row.children) || undefined;
       if (!this.columns) return;
 
       this.setColumnWidths();
       this.createResizableColumns();
+      this.table.style.tableLayout = 'fixed';
     },
 
     setColumnWidths() {
@@ -41,7 +43,7 @@ export default {
 
         this.columns[i].appendChild(resizableBar);
         this.columns[i].style.position = 'relative';
-        this.columns[i].style.width = this.columnWidth;
+        this.columns[i].style.width = this.columns[i].clientWidth + 'px';
 
         this.setListeners(resizableBar);
       }

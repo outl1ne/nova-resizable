@@ -1,6 +1,4 @@
 table.resizable-resource-table {
-  table-layout: fixed;
-
   tr {
     div {
       display: flex;
@@ -9,7 +7,8 @@ table.resizable-resource-table {
 
     th,
     td {
-      min-width: 60px;
+      min-width: 20px;
+      max-width: 280px;
     }
 
     span,
