@@ -17,6 +17,7 @@ table.resizable-resource-table {
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+
   }
 
   th {
@@ -30,5 +31,16 @@ table.resizable-resource-table {
       z-index: 5;
       background-color: var(--50);
     }
+    &:last-of-type {
+      &::after {
+        width: 0;
+      }
+      // >div {
+          // display: none;
+      // }
+    }
   }
+
+
 }
+// vim: set ts=2 sts=-1 sw=0 et:
