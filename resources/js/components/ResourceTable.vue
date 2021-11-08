@@ -14,6 +14,7 @@
     :via-relationship="viaRelationship"
     :relationship-type="relationshipType"
     :update-selection-status="updateSelectionStatus"
+    :sortable="sortable"
     @order="$emit('order', $event)"
     @reset-order-by="$emit('reset-order-by', $event)"
     @delete="$emit('delete', $event)"
