@@ -44,5 +44,9 @@ export default {
     actionsEndpoint: {
       default: null,
     },
+    sortable: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
