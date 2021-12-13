@@ -52,10 +52,10 @@ export default {
     createResizableBar(height) {
       const div = document.createElement('div');
       div.style.top = '0';
-      div.style.right = '0';
+      div.style.right = '-6px';
       div.style.position = 'absolute';
       div.style.userSelect = 'none';
-      div.style.width = '2px';
+      div.style.width = '12px';
       div.style.cursor = 'col-resize';
       div.style.height = height + 'px';
       div.style.zIndex = '10';
